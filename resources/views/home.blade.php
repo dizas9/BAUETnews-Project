@@ -1,4 +1,4 @@
-@extends('layouts.frontend')
+@extends('layouts.backend')
 
 @section('content')
 <div class="container">
@@ -8,13 +8,17 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                        <h1>Blank Page</h1>
                         </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                        <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Blank Page</li>
+                        </ol>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
