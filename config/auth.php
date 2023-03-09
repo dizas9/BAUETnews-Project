@@ -39,7 +39,12 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+        ], //sazid
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
         ],
+    
     ],
 
     /*
